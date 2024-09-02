@@ -20,7 +20,7 @@ except Exception as e:
 # Load the dataset 
 
 try :
-    popular_df=pd.read_csv(r'artifacts\ptdata.csv')
+    popular_df=pd.read_csv('artifacts/ptdata.csv')
     pt = popular_df.pivot_table(values='Book-Rating',columns='User-ID',index='Book-Title').fillna(0) 
     pt_num = pt.to_numpy() 
 
