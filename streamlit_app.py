@@ -11,7 +11,7 @@ st.title('Book Recommendations System')
 
 # Load the trained model 
 try :
-    with open('artifacts\model.pkl', 'rb') as f:
+    with open('artifacts/model.pkl', 'rb') as f:
         model = pick.load(f) 
 
 except Exception as e: 
